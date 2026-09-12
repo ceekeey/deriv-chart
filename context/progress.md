@@ -8,10 +8,11 @@
 - MongoDB connection utility and environment variable template.
 - Frontend foundation: Tailwind CSS v4, centralized Axios client, Zustand store skeletons, shared layout, placeholder services, hooks, utilities, and IndexedDB module.
 - Frontend routing: login, registration, dashboard, chart, profile, redirect, and 404 routes, with a temporary protected-route bypass for the later authentication milestone.
+- Trading chart milestone: real Lightweight Charts integration, symbol/timeframe controls, market-data loading flow, Deriv WebSocket connection setup, normalized OHLC handling, loading/error states, and responsive chart layout using the app theme.
 
 ## Not completed
 
 - Real authentication logic, JWT generation or verification, and password hashing.
 - Chart database persistence.
 - Watchlist CRUD.
-- Real frontend authentication, Lightweight Charts, Deriv WebSocket integration, drawing behavior, IndexedDB persistence, and cloud synchronization.
+- Drawing behavior, IndexedDB persistence, and cloud synchronization.

@@ -55,7 +55,7 @@ function Register() {
                 password: formData.password,
             })
             navigate('/dashboard', { replace: true })
-        } catch (submitError) {
+        } catch {
             // The store handles and surfaces the error message.
         }
     }

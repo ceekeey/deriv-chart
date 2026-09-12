@@ -41,7 +41,7 @@ const useAuthStore = create((set) => ({
       });
 
       return user;
-    } catch (error) {
+    } catch {
       set({
         user: null,
         isAuthenticated: false,
@@ -76,7 +76,9 @@ const useAuthStore = create((set) => ({
         isAuthenticated: false,
         user: null,
       });
-      throw new Error(message);
+      const wrappedError = new Error(message);
+      wrappedError.cause = error;
+      throw wrappedError;
     }
   },
 
@@ -103,7 +105,9 @@ const useAuthStore = create((set) => ({
         isAuthenticated: false,
         user: null,
       });
-      throw new Error(message);
+      const wrappedError = new Error(message);
+      wrappedError.cause = error;
+      throw wrappedError;
     }
   },
 

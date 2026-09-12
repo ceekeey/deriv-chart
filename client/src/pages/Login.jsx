@@ -46,7 +46,7 @@ function Login() {
                 password: formData.password,
             })
             navigate('/dashboard', { replace: true })
-        } catch (submitError) {
+        } catch {
             // The store already captures the error message for display.
         }
     }

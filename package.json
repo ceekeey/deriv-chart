@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run dev --prefix client & nodemon server/app.js",
-    "start": "node server/app.js"
+    "start": "node server/app.js",
+    "build": "npm install --prefix client --include=dev && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
